@@ -12,18 +12,16 @@ struct ContentView: View {
     @State private var messageString = "'When the Genius Bar Needs Help, They Call You!'"
     
     var body: some View {
-        //        ZStack {
-        //            Color.yellow
-        //                .ignoresSafeArea()
+        
         VStack {
             
-//            Text("You Have Skills!")
-//                .font(.largeTitle)
-//                .fontWeight(.black)
-//                .foregroundStyle(.goldBC)
-//                .padding()
-//                .background(.maroonBC)
-//                .clipShape(RoundedRectangle(cornerRadius: 15))
+            Text("Awesome!")
+                .font(.largeTitle)
+                .fontWeight(.black)
+                .foregroundStyle(.white)
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(.indigo)
             
             Spacer()
             Text(messageString)
@@ -34,7 +32,6 @@ struct ContentView: View {
                 .foregroundColor(.red)
                 .frame(height: 150)
                 .frame(maxWidth: .infinity)
-            //                .border(.orange, width: 2)
                 .padding()
             
             Spacer()
@@ -49,19 +46,15 @@ struct ContentView: View {
                 }
             }
             .buttonStyle(.borderedProminent)
-            //            .border(.purple, width: 5)
             .padding()
             
-            
-            
-            
+            Rectangle()
+                .frame(height: 0.0)
+                .background(.indigo)
         }
-//        .background(.yellow.opacity(0.5))
-//        .background(.yellow.gradient)
-//        .padding()
     }
-    //    }
 }
+
 
 #Preview {
     ContentView()
